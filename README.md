@@ -2,7 +2,7 @@
 
 The libproc debugger allows visualizing and logging the contents of the event queue.
 
-![Debugger picture](./debugger.png)
+![Debugger picture](./docs/debugger.png)
 
 ## Installation
 
@@ -58,7 +58,7 @@ Now just navigate to http://localhost:3000 and enjoy!
 
 The libproc debugger utilizes the EventTimer API to regularly broadcast the contents of the event queue out on a ZMQ socket. A schematic of the diagram is shown below. 
 
-![Architecture](./arch.png)
+![Architecture](./docs/arch.png)
 
 In the provided implementation, the frontend server is a Python web server that displays the data in a webpage. However, in theory the frontend serve could be anything that receives ZMQ data. For example, a frontend server could just be a Python script that simply logs the event queue data to a file.
 
